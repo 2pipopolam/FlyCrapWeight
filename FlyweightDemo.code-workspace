@@ -1,0 +1,863 @@
+{
+	"folders": [
+		{
+			"name": "FlyweightDemo",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "/home/pipopolam/Linux_Unreal_Engine_5.4.4"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "FlyweightDemo Linux Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FlyweightDemo",
+					"Linux",
+					"Debug",
+					"/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/FlyweightDemo.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pipopolam/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "FlyweightDemo Linux Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FlyweightDemo",
+					"Linux",
+					"Debug",
+					"/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/FlyweightDemo.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"FlyweightDemo Linux Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pipopolam/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "FlyweightDemo Linux Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FlyweightDemo",
+					"Linux",
+					"Debug",
+					"/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/FlyweightDemo.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pipopolam/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "FlyweightDemo Linux DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FlyweightDemo",
+					"Linux",
+					"DebugGame",
+					"/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/FlyweightDemo.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pipopolam/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "FlyweightDemo Linux DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FlyweightDemo",
+					"Linux",
+					"DebugGame",
+					"/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/FlyweightDemo.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"FlyweightDemo Linux DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pipopolam/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "FlyweightDemo Linux DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FlyweightDemo",
+					"Linux",
+					"DebugGame",
+					"/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/FlyweightDemo.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pipopolam/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "FlyweightDemo Linux Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FlyweightDemo",
+					"Linux",
+					"Development",
+					"/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/FlyweightDemo.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pipopolam/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "FlyweightDemo Linux Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FlyweightDemo",
+					"Linux",
+					"Development",
+					"/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/FlyweightDemo.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"FlyweightDemo Linux Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pipopolam/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "FlyweightDemo Linux Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FlyweightDemo",
+					"Linux",
+					"Development",
+					"/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/FlyweightDemo.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pipopolam/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "FlyweightDemo Linux Test Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FlyweightDemo",
+					"Linux",
+					"Test",
+					"/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/FlyweightDemo.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pipopolam/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "FlyweightDemo Linux Test Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FlyweightDemo",
+					"Linux",
+					"Test",
+					"/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/FlyweightDemo.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"FlyweightDemo Linux Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pipopolam/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "FlyweightDemo Linux Test Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FlyweightDemo",
+					"Linux",
+					"Test",
+					"/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/FlyweightDemo.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pipopolam/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "FlyweightDemo Linux Shipping Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FlyweightDemo",
+					"Linux",
+					"Shipping",
+					"/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/FlyweightDemo.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pipopolam/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "FlyweightDemo Linux Shipping Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FlyweightDemo",
+					"Linux",
+					"Shipping",
+					"/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/FlyweightDemo.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"FlyweightDemo Linux Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pipopolam/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "FlyweightDemo Linux Shipping Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FlyweightDemo",
+					"Linux",
+					"Shipping",
+					"/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/FlyweightDemo.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pipopolam/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "FlyweightDemo LinuxArm64 Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FlyweightDemo",
+					"LinuxArm64",
+					"Debug",
+					"/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/FlyweightDemo.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pipopolam/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "FlyweightDemo LinuxArm64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FlyweightDemo",
+					"LinuxArm64",
+					"Debug",
+					"/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/FlyweightDemo.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"FlyweightDemo LinuxArm64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pipopolam/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "FlyweightDemo LinuxArm64 Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FlyweightDemo",
+					"LinuxArm64",
+					"Debug",
+					"/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/FlyweightDemo.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pipopolam/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "FlyweightDemo LinuxArm64 DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FlyweightDemo",
+					"LinuxArm64",
+					"DebugGame",
+					"/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/FlyweightDemo.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pipopolam/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "FlyweightDemo LinuxArm64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FlyweightDemo",
+					"LinuxArm64",
+					"DebugGame",
+					"/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/FlyweightDemo.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"FlyweightDemo LinuxArm64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pipopolam/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "FlyweightDemo LinuxArm64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FlyweightDemo",
+					"LinuxArm64",
+					"DebugGame",
+					"/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/FlyweightDemo.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pipopolam/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "FlyweightDemo LinuxArm64 Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FlyweightDemo",
+					"LinuxArm64",
+					"Development",
+					"/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/FlyweightDemo.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pipopolam/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "FlyweightDemo LinuxArm64 Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FlyweightDemo",
+					"LinuxArm64",
+					"Development",
+					"/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/FlyweightDemo.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"FlyweightDemo LinuxArm64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pipopolam/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "FlyweightDemo LinuxArm64 Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FlyweightDemo",
+					"LinuxArm64",
+					"Development",
+					"/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/FlyweightDemo.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pipopolam/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "FlyweightDemo LinuxArm64 Test Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FlyweightDemo",
+					"LinuxArm64",
+					"Test",
+					"/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/FlyweightDemo.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pipopolam/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "FlyweightDemo LinuxArm64 Test Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FlyweightDemo",
+					"LinuxArm64",
+					"Test",
+					"/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/FlyweightDemo.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"FlyweightDemo LinuxArm64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pipopolam/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "FlyweightDemo LinuxArm64 Test Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FlyweightDemo",
+					"LinuxArm64",
+					"Test",
+					"/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/FlyweightDemo.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pipopolam/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "FlyweightDemo LinuxArm64 Shipping Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FlyweightDemo",
+					"LinuxArm64",
+					"Shipping",
+					"/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/FlyweightDemo.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pipopolam/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "FlyweightDemo LinuxArm64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FlyweightDemo",
+					"LinuxArm64",
+					"Shipping",
+					"/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/FlyweightDemo.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"FlyweightDemo LinuxArm64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pipopolam/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "FlyweightDemo LinuxArm64 Shipping Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FlyweightDemo",
+					"LinuxArm64",
+					"Shipping",
+					"/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/FlyweightDemo.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pipopolam/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "FlyweightDemoEditor Linux Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FlyweightDemoEditor",
+					"Linux",
+					"Debug",
+					"/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/FlyweightDemo.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pipopolam/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "FlyweightDemoEditor Linux Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FlyweightDemoEditor",
+					"Linux",
+					"Debug",
+					"/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/FlyweightDemo.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"FlyweightDemoEditor Linux Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pipopolam/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "FlyweightDemoEditor Linux Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FlyweightDemoEditor",
+					"Linux",
+					"Debug",
+					"/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/FlyweightDemo.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pipopolam/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "FlyweightDemoEditor Linux DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FlyweightDemoEditor",
+					"Linux",
+					"DebugGame",
+					"/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/FlyweightDemo.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pipopolam/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "FlyweightDemoEditor Linux DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FlyweightDemoEditor",
+					"Linux",
+					"DebugGame",
+					"/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/FlyweightDemo.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"FlyweightDemoEditor Linux DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pipopolam/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "FlyweightDemoEditor Linux DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FlyweightDemoEditor",
+					"Linux",
+					"DebugGame",
+					"/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/FlyweightDemo.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pipopolam/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "FlyweightDemoEditor Linux Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FlyweightDemoEditor",
+					"Linux",
+					"Development",
+					"/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/FlyweightDemo.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pipopolam/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "FlyweightDemoEditor Linux Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FlyweightDemoEditor",
+					"Linux",
+					"Development",
+					"/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/FlyweightDemo.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"FlyweightDemoEditor Linux Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pipopolam/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "FlyweightDemoEditor Linux Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"FlyweightDemoEditor",
+					"Linux",
+					"Development",
+					"/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/FlyweightDemo.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/pipopolam/Linux_Unreal_Engine_5.4.4"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch FlyweightDemo (Debug)",
+				"request": "launch",
+				"program": "/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/Binaries/Linux/UnrealGame-Linux-Debug",
+				"preLaunchTask": "FlyweightDemo Linux Debug Build",
+				"args": [
+				],
+				"cwd": "/home/pipopolam/Linux_Unreal_Engine_5.4.4",
+				"type": "cppdbg",
+				"visualizerFile": "/home/pipopolam/Linux_Unreal_Engine_5.4.4/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch FlyweightDemo (DebugGame)",
+				"request": "launch",
+				"program": "/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/Binaries/Linux/UnrealGame-Linux-DebugGame",
+				"preLaunchTask": "FlyweightDemo Linux DebugGame Build",
+				"args": [
+				],
+				"cwd": "/home/pipopolam/Linux_Unreal_Engine_5.4.4",
+				"type": "cppdbg",
+				"visualizerFile": "/home/pipopolam/Linux_Unreal_Engine_5.4.4/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch FlyweightDemo (Development)",
+				"request": "launch",
+				"program": "/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/Binaries/Linux/UnrealGame",
+				"preLaunchTask": "FlyweightDemo Linux Development Build",
+				"args": [
+				],
+				"cwd": "/home/pipopolam/Linux_Unreal_Engine_5.4.4",
+				"type": "cppdbg",
+				"visualizerFile": "/home/pipopolam/Linux_Unreal_Engine_5.4.4/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch FlyweightDemo (Test)",
+				"request": "launch",
+				"program": "/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/Binaries/Linux/UnrealGame-Linux-Test",
+				"preLaunchTask": "FlyweightDemo Linux Test Build",
+				"args": [
+				],
+				"cwd": "/home/pipopolam/Linux_Unreal_Engine_5.4.4",
+				"type": "cppdbg",
+				"visualizerFile": "/home/pipopolam/Linux_Unreal_Engine_5.4.4/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch FlyweightDemo (Shipping)",
+				"request": "launch",
+				"program": "/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/Binaries/Linux/UnrealGame-Linux-Shipping",
+				"preLaunchTask": "FlyweightDemo Linux Shipping Build",
+				"args": [
+				],
+				"cwd": "/home/pipopolam/Linux_Unreal_Engine_5.4.4",
+				"type": "cppdbg",
+				"visualizerFile": "/home/pipopolam/Linux_Unreal_Engine_5.4.4/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch FlyweightDemoEditor (Debug)",
+				"request": "launch",
+				"program": "/home/pipopolam/Linux_Unreal_Engine_5.4.4/Engine/Binaries/Linux/UnrealEditor-Linux-Debug",
+				"preLaunchTask": "FlyweightDemoEditor Linux Debug Build",
+				"args": [
+					"/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/FlyweightDemo.uproject"
+				],
+				"cwd": "/home/pipopolam/Linux_Unreal_Engine_5.4.4",
+				"type": "cppdbg",
+				"visualizerFile": "/home/pipopolam/Linux_Unreal_Engine_5.4.4/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch FlyweightDemoEditor (DebugGame)",
+				"request": "launch",
+				"program": "/home/pipopolam/Linux_Unreal_Engine_5.4.4/Engine/Binaries/Linux/UnrealEditor-Linux-DebugGame",
+				"preLaunchTask": "FlyweightDemoEditor Linux DebugGame Build",
+				"args": [
+					"/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/FlyweightDemo.uproject"
+				],
+				"cwd": "/home/pipopolam/Linux_Unreal_Engine_5.4.4",
+				"type": "cppdbg",
+				"visualizerFile": "/home/pipopolam/Linux_Unreal_Engine_5.4.4/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch FlyweightDemoEditor (Development)",
+				"request": "launch",
+				"program": "/home/pipopolam/Linux_Unreal_Engine_5.4.4/Engine/Binaries/Linux/UnrealEditor",
+				"preLaunchTask": "FlyweightDemoEditor Linux Development Build",
+				"args": [
+					"/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/FlyweightDemo.uproject"
+				],
+				"cwd": "/home/pipopolam/Linux_Unreal_Engine_5.4.4",
+				"type": "cppdbg",
+				"visualizerFile": "/home/pipopolam/Linux_Unreal_Engine_5.4.4/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Linux Development Build",
+				"program": "/home/pipopolam/Linux_Unreal_Engine_5.4.4/Engine/Build/BatchFiles/RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-engine",
+					"-dotnet"
+				],
+				"console": "internalConsole",
+				"internalConsoleOptions": "openOnSessionStart",
+				"stopAtEntry": false,
+				"cwd": "/home/pipopolam/Linux_Unreal_Engine_5.4.4"
+			}
+		]
+	}
+}

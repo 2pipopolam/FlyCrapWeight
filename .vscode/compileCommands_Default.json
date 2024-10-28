@@ -1,0 +1,58 @@
+[
+	{
+		"file": "/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/Source/FlyweightDemo/FlyweightDemo.Build.cs",
+		"arguments": [
+			"/home/pipopolam/Linux_Unreal_Engine_5.4.4/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/.vscode/compileCommands_Default/FlyweightDemo.1.rsp"
+		],
+		"directory": "/home/pipopolam/Linux_Unreal_Engine_5.4.4/Engine/Source"
+	},
+	{
+		"file": "/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/Source/FlyweightDemo/FlyweightDemo.cpp",
+		"arguments": [
+			"/home/pipopolam/Linux_Unreal_Engine_5.4.4/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/.vscode/compileCommands_Default/FlyweightDemo.1.rsp"
+		],
+		"directory": "/home/pipopolam/Linux_Unreal_Engine_5.4.4/Engine/Source"
+	},
+	{
+		"file": "/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/Source/FlyweightDemo/FlyweightDemo.h",
+		"arguments": [
+			"/home/pipopolam/Linux_Unreal_Engine_5.4.4/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/.vscode/compileCommands_Default/FlyweightDemo.1.rsp"
+		],
+		"directory": "/home/pipopolam/Linux_Unreal_Engine_5.4.4/Engine/Source"
+	},
+	{
+		"file": "/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/Source/FlyweightDemo/Private/CubeActor.cpp",
+		"arguments": [
+			"/home/pipopolam/Linux_Unreal_Engine_5.4.4/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/.vscode/compileCommands_Default/FlyweightDemo.1.rsp"
+		],
+		"directory": "/home/pipopolam/Linux_Unreal_Engine_5.4.4/Engine/Source"
+	},
+	{
+		"file": "/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/Source/FlyweightDemo/Private/CubeSpawner.cpp",
+		"arguments": [
+			"/home/pipopolam/Linux_Unreal_Engine_5.4.4/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/.vscode/compileCommands_Default/FlyweightDemo.1.rsp"
+		],
+		"directory": "/home/pipopolam/Linux_Unreal_Engine_5.4.4/Engine/Source"
+	},
+	{
+		"file": "/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/Source/FlyweightDemo/Public/CubeActor.h",
+		"arguments": [
+			"/home/pipopolam/Linux_Unreal_Engine_5.4.4/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/.vscode/compileCommands_Default/FlyweightDemo.1.rsp"
+		],
+		"directory": "/home/pipopolam/Linux_Unreal_Engine_5.4.4/Engine/Source"
+	},
+	{
+		"file": "/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/Source/FlyweightDemo/Public/CubeSpawner.h",
+		"arguments": [
+			"/home/pipopolam/Linux_Unreal_Engine_5.4.4/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/pipopolam/Documents/Unreal Projects/FlyweightDemo/.vscode/compileCommands_Default/FlyweightDemo.1.rsp"
+		],
+		"directory": "/home/pipopolam/Linux_Unreal_Engine_5.4.4/Engine/Source"
+	}
+]
